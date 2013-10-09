@@ -1,0 +1,119 @@
+{
+  "joinity": {
+    "clase":"p01",
+    "entrada": [{
+      "posicion":"centro",
+      "titulo":"mambo",
+      "subtitulo":"Hola",
+      "imagen":"asd.jpg",
+      "imagen1":"oasda",
+      "imagen2":"asdasd"
+    }],
+    "presentacion":[{
+      "extendido":"si",
+      "titulo":"Joinity, the join community",
+      "subtitulo":"Cliente: Joinity™",
+      "acerca":"acercaaaaa",
+      "funciones":"funciooooones",
+      "imagen":"asdasd"
+    }]
+  },
+  "hellodoctor": {
+    "clase":"p02",
+    "entrada": [{
+      "posicion":"cincuenta",
+      "titulo":"Hello, Doctor",
+      "subtitulo":"App de realidad",
+      "imagen":"asd.jpg",
+      "imagen1":"oasda",
+      "imagen2":"asdasd"
+    }],
+    "presentacion":[{
+      "extendido":"si",
+      "titulo":"Hello, Doctor",
+      "subtitulo":"Cliente: ToyShock LTD",
+      "acerca":"acercaaaaa",
+      "funciones":"funciooooones",
+      "imagen":"asdasd"
+    }]
+  },
+  "kelme": {
+    "clase":"p03",
+    "entrada": [{
+      "posicion":"sesentaycinco",
+      "titulo":"mambo",
+      "subtitulo":"Hola",
+      "imagen":"asd.jpg",
+      "imagen1":"oasda",
+      "imagen2":"asdasd"
+    }],
+    "presentacion":[{
+      "extendido":"si",
+      "titulo":"El crack de los toques",
+      "subtitulo":"Cliente: Kelme",
+      "acerca":"acercaaaaa",
+      "funciones":"funciooooones",
+      "imagen":"asdasd"
+    }]
+  },
+  "pepri": {
+    "clase":"p04",
+    "entrada": [{
+      "posicion":"imagenes",
+      "titulo":"mambo",
+      "subtitulo":"Hola",
+      "imagen":"asd.jpg",
+      "imagen1":"oasda",
+      "imagen2":"asdasd"
+    }],
+    "presentacion":[{
+      "extendido":"si",
+      "titulo":"La Pepri: rehabilita tu propio barrio",
+      "subtitulo":"Cliente: PSOE/PSPV",
+      "acerca":"acercaaaaa",
+      "funciones":"funciooooones",
+      "imagen":"asdasd"
+    }]
+  },
+  "iceberg": {
+    "clase":"p05",
+    "entrada": [{
+      "posicion":"imagenes50",
+      "titulo":"mambo",
+      "subtitulo":"Hola",
+      "imagen":"asd.jpg",
+      "imagen1":"oasda",
+      "imagen2":"asdasd"
+    }],
+    "presentacion":[{
+      "extendido":"si",
+      "titulo":"Iceberg: deep website",
+      "subtitulo":"Cliente: Iceberg",
+      "acerca":"acercaaaaa",
+      "funciones":"funciooooones",
+      "imagen":"asdasd"
+    }]
+  },
+    "huelli": {
+    "clase":"p06",
+    "entrada": [{
+      "posicion":"imagenes50",
+      "titulo":"mambo",
+      "subtitulo":"Hola",
+      "imagen":"asd.jpg",
+      "imagen1":"oasda",
+      "imagen2":"asdasd"
+    }],
+    "presentacion":[{
+      "extendido":"si",
+      "titulo":"Huelli, tu ecomascota virtual",
+      "subtitulo":"Cliente: Consum",
+      "acerca":"acercaaaaa",
+      "funciones":"funciooooones",
+      "imagen":"asdasd"
+    }]
+  }
+}
+
+
+
