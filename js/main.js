@@ -197,6 +197,7 @@ $('.circulo').each(function() {
 $('.agujeeero').click(function() {
     $('.circulo').removeClass('grande');
     /* 	$('.circulo').removeClass('nogrande'); */
+    console.log($(this).html());
     $(this).prev().addClass('grande');
     $('#intro .container').fadeTo('slow', 0, function() {
 
