@@ -2,115 +2,198 @@
   "joinity": {
     "clase":"p01",
     "entrada": [{
-      "posicion":"centro",
-      "titulo":"mambo",
-      "subtitulo":"Hola",
-      "imagen":"asd.jpg",
-      "imagen1":"oasda",
-      "imagen2":"asdasd"
+      "posicion":"imagenes",
+      "titulo":"",
+      "subtitulo":"",
+      "imagen":"projects/joinity01.png",
+      "imagen1":"projects/joinity03.png",
+      "imagen2":"projects/joinity04.png"
+    },{
+      "posicion":"imagenes",
+      "titulo":"",
+      "subtitulo":"",
+      "imagen":"projects/joinity02.png",
+      "imagen1":"projects/joinity03.png",
+      "imagen2":"projects/joinity04.png"
+    },{
+      "posicion":"imagenes",
+      "titulo":"",
+      "subtitulo":"",
+      "imagen":"projects/joinity03.png",
+      "imagen1":"projects/joinity03.png",
+      "imagen2":"projects/joinity04.png"
+    },{
+      "posicion":"imagenes",
+      "titulo":"",
+      "subtitulo":"",
+      "imagen":"projects/joinity04.png",
+      "imagen1":"projects/joinity03.png",
+      "imagen2":"projects/joinity04.png"
     }],
     "presentacion":[{
       "extendido":"si",
       "titulo":"Joinity, the join community",
       "subtitulo":"Cliente: Joinity™",
-      "acerca":"acercaaaaa",
-      "funciones":"funciooooones",
-      "imagen":"asdasd"
+      "acerca":"Joinity es una startup madrileña que pretende convertirse en el facilitador por excelencia de las tareas en grupo. Viajes, aficiones, reservas o eventos: el usuario encontrará en Joinity infinidad de opciones para compartir con sus amigos.",
+      "funciones":"Estrategia digital. Diseño de UI y UX. Backend: Python (Django). Frontend: HTML5 + AngularJS. Auditoría de seguridad.",
+      "imagen":"projects/joinity-icono.png"
     }]
   },
   "hellodoctor": {
     "clase":"p02",
     "entrada": [{
-      "posicion":"cincuenta",
-      "titulo":"Hello, Doctor",
-      "subtitulo":"App de realidad",
-      "imagen":"asd.jpg",
-      "imagen1":"oasda",
-      "imagen2":"asdasd"
+      "posicion":"imagenes",
+      "titulo":"",
+      "subtitulo":"",
+      "imagen":"projects/hello02.png",
+      "imagen1":"projects/joinity03.png",
+      "imagen2":"projects/joinity04.png"
+    },{
+      "posicion":"imagenes",
+      "titulo":"",
+      "subtitulo":"",
+      "imagen":"projects/hello03.png",
+      "imagen1":"projects/joinity03.png",
+      "imagen2":"projects/joinity04.png"
+    },{
+      "posicion":"imagenes",
+      "titulo":"",
+      "subtitulo":"",
+      "imagen":"projects/hello01.png",
+      "imagen1":"projects/joinity03.png",
+      "imagen2":"projects/joinity04.png"
     }],
     "presentacion":[{
       "extendido":"si",
       "titulo":"Hello, Doctor",
       "subtitulo":"Cliente: ToyShock LTD",
-      "acerca":"acercaaaaa",
-      "funciones":"funciooooones",
-      "imagen":"asdasd"
+      "acerca":"Hello, Doctor es un juego de realidad aumentada para iPad y tablets Android. El proyecto nace como complemento digital a una colección de juguetes educativos para niños de entre 3 y 9 años.",
+      "funciones":"Dirección creativa, UI, UX, desarrollo (Objective C, Java).",
+      "imagen":"projects/hello-icono.png"
     }]
-  },
-  "kelme": {
+  },"kelme": {
     "clase":"p03",
     "entrada": [{
-      "posicion":"sesentaycinco",
-      "titulo":"mambo",
-      "subtitulo":"Hola",
-      "imagen":"asd.jpg",
-      "imagen1":"oasda",
-      "imagen2":"asdasd"
+      "posicion":"imagenes50",
+      "titulo":"",
+      "subtitulo":"",
+      "imagen":"projects/kelme01.png",
+      "imagen1":"projects/kelme01.png",
+      "imagen2":"projects/kelme02.png"
     }],
     "presentacion":[{
       "extendido":"si",
       "titulo":"El crack de los toques",
       "subtitulo":"Cliente: Kelme",
-      "acerca":"acercaaaaa",
-      "funciones":"funciooooones",
-      "imagen":"asdasd"
+      "acerca":"El estudio Estimado Jose Alfredo nos contrató el desarrollo de esta aplicación para Facebook inte- grada en su campaña ‘El crack de los toques’ de Kelme. En ella, los jugadores competi- rían por una serie de premios, exhibiendo su habilidad con el toque de un balón virtual y retan- do a sus amigos.",
+      "funciones":"Diseño de UI y UX. Programación: actionscript 3, diseño de bases de datos, integra- ción con API de Facebook.",
+      "imagen":"projects/kelme-icono.png"
     }]
   },
   "pepri": {
     "clase":"p04",
     "entrada": [{
       "posicion":"imagenes",
-      "titulo":"mambo",
-      "subtitulo":"Hola",
-      "imagen":"asd.jpg",
-      "imagen1":"oasda",
-      "imagen2":"asdasd"
+      "titulo":"",
+      "subtitulo":"",
+      "imagen":"projects/pepri01.png",
+      "imagen1":"projects/joinity03.png",
+      "imagen2":"projects/joinity04.png"
+    },{
+      "posicion":"imagenes",
+      "titulo":"",
+      "subtitulo":"",
+      "imagen":"projects/pepri04.png",
+      "imagen1":"projects/joinity03.png",
+      "imagen2":"projects/joinity04.png"
+    },{
+      "posicion":"imagenes",
+      "titulo":"",
+      "subtitulo":"",
+      "imagen":"projects/pepri02.png",
+      "imagen1":"projects/joinity03.png",
+      "imagen2":"projects/joinity04.png"
+    },{
+      "posicion":"imagenes",
+      "titulo":"",
+      "subtitulo":"",
+      "imagen":"projects/pepri03.png",
+      "imagen1":"projects/joinity03.png",
+      "imagen2":"projects/joinity04.png"
     }],
     "presentacion":[{
       "extendido":"si",
-      "titulo":"La Pepri: rehabilita tu propio barrio",
+      "titulo":"La pepri: rehabilita tu propio barrio",
       "subtitulo":"Cliente: PSOE/PSPV",
-      "acerca":"acercaaaaa",
-      "funciones":"funciooooones",
-      "imagen":"asdasd"
+      "acerca":"La Pepri es una propuesta de rehabilitación amable para el barrio de Cabanyal de Valencia. En colaboración con un grupo de profesionales interdisciplinares (arquitectos, periodistas, huma- nistas, diseñadores, sociólogos), Bueninvento desarrolló la aplica- ción de realidad aumentada que daría soporte a la estrategia del proyecto. Gracias a la realidad aumentada, los usuarios podían plantear su propia propuesta de rehabilitación para cualquier calle del barrio. Asimismo, la naturaleza social de la aplicación permitía a los usua- rios compartir sus propuestas, discutir la problemática del barrio o subir fotografías tomadas direc- tamente en las calles del barrio.",
+      "funciones":"Branding digital. Copywriting. Diseño de UI y UX. Diseño de sonido y música. Programación: html5, jquery/ajax, vuforia, css3.",
+      "imagen":"projects/pepri-icono.png"
     }]
   },
   "iceberg": {
     "clase":"p05",
     "entrada": [{
-      "posicion":"imagenes50",
-      "titulo":"mambo",
-      "subtitulo":"Hola",
-      "imagen":"asd.jpg",
-      "imagen1":"oasda",
-      "imagen2":"asdasd"
+      "posicion":"imagenes",
+      "titulo":"",
+      "subtitulo":"",
+      "imagen":"projects/iceberg01.png",
+      "imagen1":"projects/joinity03.png",
+      "imagen2":"projects/joinity04.png"
+    },{
+      "posicion":"imagenes",
+      "titulo":"",
+      "subtitulo":"",
+      "imagen":"projects/iceberg02.png",
+      "imagen1":"projects/joinity03.png",
+      "imagen2":"projects/joinity04.png"
+    },{
+      "posicion":"imagenes",
+      "titulo":"",
+      "subtitulo":"",
+      "imagen":"projects/iceberg03.png",
+      "imagen1":"projects/joinity03.png",
+      "imagen2":"projects/joinity04.png"
     }],
     "presentacion":[{
       "extendido":"si",
       "titulo":"Iceberg: deep website",
-      "subtitulo":"Cliente: Iceberg",
-      "acerca":"acercaaaaa",
-      "funciones":"funciooooones",
-      "imagen":"asdasd"
+      "subtitulo":"Cliente: Iceberg, sea foods",
+      "acerca":"Según el principio del iceberg de Hemingway, un buen cuento es aquel que omite cosas, que sólo muestra la punta del iceberg. El resto, la masa que está bajo el agua, se puede inferir. Con el princpio de Hemingway como leiv motiv, desarrollamos una campaña de comunicación online para Iceberg Sea Foods donde el iceberg se convertiría en metáfora de los sólidos valores sobre los que la marca se funda- ba. La calidad de los alimentos en la mesa del consumidor es la pun- ta del iceberg del que nos habla Hemingway. Nuestra campaña revelaría el resto, los valores que anidan en el ADN de la empresa, a medida que el usuario buceara −literalmente− hacia lo más profundo de la web.",
+      "funciones":"Branding digital. Copywriting. Diseño de UI y UX. Diseño de sonido y música. Programación: html5, jquery/ ajax, raphael.js, css3.",
+      "imagen":"projects/iceberg-icono.png"
     }]
   },
     "huelli": {
     "clase":"p06",
     "entrada": [{
-      "posicion":"imagenes50",
-      "titulo":"mambo",
-      "subtitulo":"Hola",
-      "imagen":"asd.jpg",
-      "imagen1":"oasda",
-      "imagen2":"asdasd"
+      "posicion":"imagenes",
+      "titulo":"",
+      "subtitulo":"",
+      "imagen":"projects/huelli01.png",
+      "imagen1":"projects/joinity03.png",
+      "imagen2":"projects/joinity04.png"
+    },{
+      "posicion":"imagenes",
+      "titulo":"",
+      "subtitulo":"",
+      "imagen":"projects/huelli02.png",
+      "imagen1":"projects/joinity03.png",
+      "imagen2":"projects/joinity04.png"
+    },{
+      "posicion":"imagenes",
+      "titulo":"",
+      "subtitulo":"",
+      "imagen":"projects/huelli03.png",
+      "imagen1":"projects/joinity03.png",
+      "imagen2":"projects/joinity04.png"
     }],
     "presentacion":[{
       "extendido":"si",
-      "titulo":"Huelli, tu ecomascota virtual",
+      "titulo":"Huelli: tu ecomascota digital",
       "subtitulo":"Cliente: Consum",
-      "acerca":"acercaaaaa",
-      "funciones":"funciooooones",
-      "imagen":"asdasd"
+      "acerca":"Más de 2.000 usuarios interac- tuaron con esta mascota virtual en la fanpage de Consum duran- te los 15 días de duración de la campaña. Huelli era adoptada por los usuarios e interactuaba con ellos enseñándoles a cuidar del medioambiente a través de jue- gos y acertijos.",
+      "funciones":"Animaciones. Programación: actionscript 3, diseño de bases de datos, integración con API de Facebook.",
+      "imagen":"projects/huelli-icono.png"
     }]
   }
 }
