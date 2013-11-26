@@ -1,0 +1,350 @@
+.transition (@transition: all .5s ease-in-out) {
+-webkit-transition: @transition;
+-moz-transition: @transition;
+-o-transition: @transition;
+transition: @transition;
+}
+
+.derechoo,.izquierdoo,.pasivvo {
+.transition(all .5s ease-in-out);
+}
+
+
+/* <!------------->
+<!--! APIS  -->
+<!------------->
+ */
+
+
+#panelResultados {
+	clear: both;
+	display: none;
+}
+
+#mapastreet {
+    /* display:none; */
+    width:100%;
+    height:160px;
+}
+
+/*
+#panel {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  margin-left: -180px;
+  z-index: 5;
+  background-color: #fff;
+  padding: 5px;
+  border: 1px solid #999;
+}
+*/
+
+#mapastreet img {
+  max-width: none;
+}
+
+#map-canvas {
+	height:700px;
+	width:100%;
+}
+
+/* <!--------------------->
+<!--! MAPA ESTILOS  -->
+<!--------------------->
+ */
+ 
+ #elmapa {
+	 width:100%!important;
+	 height:700px!important;
+	 .alert {
+  	 text-shadow:none;
+	 }
+ }
+ 
+ #paneles {
+	 left:0px;
+	 position:absolute;
+	 text-align:center;
+	 width:100%; 
+}
+
+.centrador {
+	display:inline-block;
+	z-index:1;
+	position: relative;
+	width:auto;
+	margin-top:66px;
+}
+
+.elpanel {
+  background-color: #BA2D2C;
+  border-radius: 6px 6px 6px 6px;
+  display: inline-block !important;
+  float: left !important;
+  overflow: hidden;
+  position: relative!important;
+  width: 280px;
+}
+
+#panelResultados {
+	position:absolute;
+	z-index:2;
+}
+
+#panelResultados {
+  color: white;
+  font-family: seravek;
+  font-weight: bold;
+  right: 17px;
+  top: 8px;
+  font-size:24px;
+}
+
+.elpanel > h1 {
+  color: white;
+  font-family: 'elena basic'!important;
+  font-weight: normal;
+  font-size: 29px;
+  letter-spacing: normal;
+  margin-top: 22px;
+  margin-bottom:17px;
+}
+
+.elpanel p {
+  font-size: 12px;
+  color: white;
+  font-weight: lighter;
+  line-height: normal;
+  margin-bottom: 5px;
+}
+
+.gmnoprint {
+  display: none;
+}
+
+.elpanel .elboton {
+  background-color: #8F0303;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: normal;
+  letter-spacing: normal;
+  margin-top: 10px;
+  padding: 17px 0!important;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.elpanel .elboton:hover {
+  background-color: #5f0000;
+}
+.elpico {
+  background-image: url("../img/iconosmapa.png");
+  background-position: 0 26px;
+  height: 17px;
+  margin-left: 129px;
+  position: absolute;
+  width: 23px;
+  margin-top: 331px;
+}
+
+#contact {
+  background-color: #EFEFEF;
+  margin-top:-10px;
+  padding:0;
+}
+
+#cita h2 {
+	text-align:center;
+	color:#C6C6C6;
+	font-size:31px;
+	font-family:'Elena basic'!important;;
+	span {
+		color:#949494;
+	}
+}
+
+#cita {
+  padding: 45px 0;
+}
+
+.elpanel.izquierdoo {
+  margin-right: 42px;
+}
+
+.derechoo {
+	form {
+  margin: 8px 0 0;
+}
+z-index:-1;
+left:-100px;
+transform: perspective(20005px) rotateY(90deg) translateZ(-38px);
+-webkit-transform: perspective(20005px) rotateY(90deg) translateZ(-38px);
+
+background-color:#BDBDBD;
+position: absolute!important;
+
+
+form span {
+  width: 63px;
+  height: 44px;
+  background-color: #313131;
+  display: block;
+  position: absolute;
+  left: 9px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  background-image:url('../img/iconosmapa.png');
+  background-repeat:no-repeat;
+}
+#last {
+	display:none;
+}
+  form span.mensaje {
+	  height: 99px;
+	 background-position: 19px -115px;
+height: 99px;
+  }
+  form span.nombre {
+	  background-position: 19px 12px;
+  }
+  form span.asunto {
+  background-position: 20px -75px;
+
+  }
+  form span.email {
+	  background-position: 20px -31px;
+  }
+}
+
+.unfold {
+	transform:perspective(20005px) rotateY(0deg) translateZ(-38px);
+	-webkit-transform:perspective(20005px) rotateY(0deg) translateZ(-38px);
+	left:0px;
+	z-index:2;
+}
+
+.izquierdoo {
+	transform:perspective(20005px) rotateY(0deg) translateZ(-38px);
+	-webkit-transform:perspective(20005px) rotateY(0deg) translateZ(-38px);
+	left:-0;
+	z-index:1;
+}
+
+.fold {
+  left: 177px;
+  transform: perspective(20005px) rotateY(90deg) translateZ(-38px);
+  -webkit-transform: perspective(20005px) rotateY(90deg) translateZ(-38px);
+  z-index:1;
+}
+
+
+
+.elpanel input, .elpanel textarea {
+border: 0 none;
+border-radius: 3px 3px 3px 3px;
+font-family: seravek;
+padding: 12px 20px 12px 81px;
+width: 57%;
+}
+
+.m-btn.red.elboton {
+  padding: 18px 0;
+  border-radius: 0;
+}
+
+#contact {
+
+.alert {
+  background-color: rgba(186, 44, 44, 0.69);
+  border: 0 none;
+  border-radius: 0 0 0 0;
+  color: white;
+  font-family: seravek;
+  font-size: 13px;
+  list-style-type: none;
+  margin: 8px 0 0;
+  padding: 21px 25px;
+  text-align: center;
+  text-transform: none;
+  width: 133px!important;
+}
+.message {
+margin-left: 300px;
+margin-top: -9px;
+position: absolute;
+}
+
+.volver {
+  background-color: #BA2D2C;
+  background-image: url("../img/volver.png");
+  background-position: 24px 7px;
+  background-repeat: no-repeat;
+  border-radius: 3px 3px 3px 3px;
+  height: 24px;
+  margin-left: 12px;
+  margin-top: 26px;
+  position: absolute;
+  width: 61px;
+  z-index: 101;
+  cursor:pointer;
+}
+
+.volver:hover {
+	background-position:24px -10px;
+}
+.derechoo .elboton {
+  padding: 19px 0!important;
+}
+}
+
+#cita {
+  padding: 45px 0;
+  font-weight: normal!important;
+}
+
+#contactForm textarea {
+  min-height: 75px;
+}
+
+.pizquierda ul.reverso {
+top: inherit;
+width: 621px;
+z-index: 0;
+margin-top: 2px;
+}
+
+.pizquierda ul.reverso {
+top: inherit;
+width: 773px;
+z-index: 0;
+margin-top: 2px;
+position:absolute;
+}
+
+.reverso li {
+margin-top: -2px!important;
+}
+
+.pasivvo {
+  color: #C6C6C6!important;
+  cursor:pointer;
+
+}
+
+#cita h2 span {
+  color: #949494;
+  border-bottom: 1px dashed;
+  
+}
+
+.pasivvo:hover {
+	  color: #949494!important;
+	  
+  }
+  
+  .elpanel .elboton {
+	  font-family:seravek;
+  }
