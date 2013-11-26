@@ -25,6 +25,9 @@ transition: @transition;
 
 /* Barra de navegaciÃ³n */
 
+.navbar .nav > li {
+  border-bottom:7px solid transparent;
+}
 .nav-collapse .nav li a {
   color: #A6A6A6 !important;
   font-family: seravek;
@@ -58,6 +61,9 @@ transition: @transition;
   margin-top: 13px;
 }
 
+.nav.pull-right {
+  max-height:76px;
+}
 .corazonlogo {
 	.opacity(0.7);
 }
@@ -132,12 +138,11 @@ transition: @transition;
   height: 100%;
   width: 100%;
   position: absolute;
-  top: 70px;
+  top: 77px;
   left: 0;
   z-index:2;
   text-align:center;
   min-height:457px;
-  padding-bottom:7px;
 }
 
 #introfondo > img {

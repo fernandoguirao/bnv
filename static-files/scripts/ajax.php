@@ -105,7 +105,7 @@ if ($op == 'busqueda') {
 		$xml->loadXML($xml_string);
 		
 		$clima = $xml->getElementsByTagNameNS($namespace_yweather, 'condition');
-		$clima = $clima->item(0);
+		$clima = $clima->item(0);	
 		
 		$resultado['clima']['codigo'] = $clima->getAttribute('code');
 		$resultado['clima']['estado'] = $mensajes[$resultado['clima']['codigo']];
