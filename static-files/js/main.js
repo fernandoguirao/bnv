@@ -11,8 +11,6 @@ $('.anverso li').each(function() {
     $(this).click(function() {
 
         funcionajax(this, true);
-
-
     });
 });
 
@@ -31,7 +29,7 @@ var funcionajax = function(elp, nav) {
 
         var clase = $(elp).attr('class');
 
-        $.getJSON('proyectos.json', function(data) {
+        $.getJSON('static/proyectos.json', function(data) {
 
             $.each(data, function(entryIndex, entry) {
 
@@ -755,7 +753,7 @@ $(function() {
         parametros.localidad_id = localidad_id;
 
         //llamamos al script php mediante ajax
-        $.post('ajax.php', parametros, function(resultado) {
+        $.post('static/ajax.php', parametros, function(resultado) {
             if (resultado.error) alert(resultado.mensaje);
             else {
                 var clima = resultado.clima;
@@ -763,7 +761,7 @@ $(function() {
                 $('#lblFecha').html(clima.fecha);
                 $('#lblEstado').html(clima.estado);
                 $('#lblTemperatura').html(clima.temperatura);
-                $('#imgEstado').html('<img src="img/iconos_clima/' + clima.codigo + '.png">');
+                $('#imgEstado').html('<img src="static/img/iconos_clima/' + clima.codigo + '.png">');
                 $('#panelResultados').css('display', 'block');
             }
         }, 'json');

@@ -1,5 +1,5 @@
 # Django settings for bueninvento project.
-# -*- coding: utf-8 -*-
+#-*- coding: utf-8 -*-
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG

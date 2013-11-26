@@ -1,0 +1,70 @@
+section#contact
+    #cita
+        h2.hidden-phone
+          span.visita.activvo Ven a visitarnos
+          | o
+          span.escribe.pasivvo envíanos un mensaje
+        h2.visible-phone
+          span Ven a visitarnos
+          | o
+          span envíanos un mensaje
+      #elmapa
+        #paneles
+          .centrador
+            .elpanel.izquierdoo
+              #panelResultados
+                #imgEstado
+                #panelResultadosInformacion
+                  strong
+                  span#lblTemperatura
+                  | ° C
+              #mapastreet
+              h1
+                | bueninvento
+              p
+                | C/ Gascó Oliag 8, 8. 46010. Valencia.
+              p
+                | m. 690 708 181 | t. 963 615 713
+              p.visible-phone
+                a(href='mailto:hello@bueninvento.es') hello@bueninvento.es
+              #skribe.elboton.hidden-phone
+                | Escríbenos
+            .message
+              .alert
+            .elpico
+            .elpanel.derechoo
+              #panelResultados
+                #imgEstado
+                #panelResultadosInformacion
+                  strong
+                  span#lblTemperatura
+                  | ° C
+              form#contactForm(action='static/js/sendmail.php', method='post')
+                span.nombre
+                input#name(type='text', placeholder='¿Cómo te llamas?', name='name', value='')
+                span.email
+                input#email(type='text', placeholder='Email', name='email', value='')
+                span.asunto
+                input#last(type='text', placeholder='Asunto', name='last', value='')
+                span.asunto
+                input#subjeect(type='text', placeholder='Asunto', name='subjeect', value='')
+                span.mensaje
+                textarea(rows='3', placeholder='Mensaje', name='message')
+                .volver
+                input.m-btn.red.elboton(type='submit', value='Enviar')
+              .elpico
+        #map-canvas
+      div
+        #panelResultados
+          #imgEstado
+          #panelResultadosInformacion
+            strong Temperatura:
+            span#lblTemperatura
+            | ° C
+            br
+            strong Estado:
+            span#lblEstado
+            br
+            strong Fecha:
+            span#lblFecha
+            br
