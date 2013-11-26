@@ -188,7 +188,7 @@ setTimeout(function() {
 //! FUNCIÓN PARA ASOCIAR CÍCULOS A AGUJEROS
 //=============================================
 
-	
+
 
 var numElem = $('div.circulo').size();
 $('.circulo').each(function(){
