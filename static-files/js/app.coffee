@@ -1,31 +1,23 @@
+empieza = ->
+  console.log 'empieza'
+  $("#preloader").addClass('alternate')
+  $("#preloader").fadeIn "slow"
+  
+cargado = ->
+  console.log 'fin'
+  $("#preloader").fadeOut "slow"
 
-#sliders autoplay
 #intro slider
 frases = ->
   $("#carousel_fade_intro,#carousel_fade_intro2").carousel
     interval: 2500
     pause: "false"
-
-
-#Stop intro slider on last item
-
-#works sliders
-
-#make section height of window
-
-#custom scrollbar
-
+ 
 #contact form
 showRequest = (formData, jqForm, options) ->
   queryString = $.param(formData)
   true
 showResponse = (responseText, statusText) ->
-
-#smooth scroll on page
-
-#gallery image hover tooltip trigger
-
-#collapse menu on click on mobile and tablet devices
 
 # MAPA FONDO 
 initialize = ->
@@ -36,8 +28,6 @@ initialize = ->
     mapTypeId: google.maps.MapTypeId.ROADMAP
 
   map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions)
-
-# EL AJAX 
 
 #====================================================
 #! Función para crear el lienzo del corazón
@@ -81,105 +71,7 @@ lanzaragujeros = ->
   setTimeout (->
   ), 11000
 
-#=============================================
-#! FUNCIÓN PARA ASOCIAR CÍCULOS A AGUJEROS
-#=============================================
-
-# functiondentro(sufila,sucolumna,eltexto); 
-
-# 	$('.circulo').removeClass('nogrande'); 
-
-#
-#var oftopmore = $('#more').offset().left;
-#
-#$('.circulo.grande').css({
-#	'left':	$('#more .m-btn').offset().left
-#	});
-#
-
-# TAMAÑO DE IMÁGENES EN CÍRCULOS 
-
-# imgmasc 
-
-#
-#var altoimg = $('.imgmasc img').height();
-#var anchoimg = $('.imgmasc img').width();
-#if (altoimg > anchoimg) {
-#	$('.imgmasc img').css({
-#		"width":$('.imgmasc').width(),
-#		"height":"auto",
-#		"position":"absolute",
-#		"left":"0"
-#	});
-#	width();
-#} else {
-#	$('.imgmasc img').css({
-#		"height":$('.imgmasc').height(),
-#		"width":"auto",
-#		"position":"absolute",
-#		"left":"0"
-#		})
-#}
-#
-
-# FUNCIÓN PARA QUE LOS ROJOS NO OCUPEN ESPACIOS NEGROS 
-
-#
-#function functiondentro(sufilaa,sucolumnaa,eltextoo){
-#	if($('.c'+sucolumnaa+'.f'+sufilaa).children().length > 0 && $('.c'+sucolumnaa+'.f'+sufilaa).hasClass('negro')) {
-#	sucolumna2 = sucolumnaa+1;
-#		functiondentro(sufilaa,sucolumna2,eltextoo);
-#	} else {
-#		$('.c'+sucolumnaa+'.f'+sufilaa).append(eltextoo);
-#	}
-#	
-#	}
-#
-
-#
-#	var functionHolder = function (counter) {
-#    output(counter);
-#    if (counter > 0) {
-#        functionHolder(counter-1);
-#    }
-#}
-#
-
-#
-#$('.titulo').click(function(){
-#	$(this).parent().parent().addClass('nogrande');
-#})
-#
-
-#====================================
-#! QUE SEAN CLICABLES LOS CÍRCULOS
-#====================================
-
-#
-#$(document).ready(function(){
-#var altointro = $('#intro').height();
-#var anchointro = $('#intro').width();
-#$('#introfondo').height(altointro);
-#});
-#
-
-# CAROUSEL DE FRASES DEL PRINCIPIO 
-
-#
-#$('#carousel_fade_intro').bind('slid',function(){
-#	alert('funciona');
-#})
-#
-
-# FONDO MOVIMIENTO CLIENTES 
-# Speed in milliseconds
-# How many pixels to move per step
-# The current pixel row
-# Background image width
-# How wide the header is.
-
-#The pixel row where to start a new loop
-scrollBg = ->
+scrollBg = () ->
   
   #Go to next pixel row.
   current -= step
@@ -190,264 +82,14 @@ scrollBg = ->
   #Set the CSS of the header.
   $("#clientescroll").css "background-position", "0 " + current + "px"
 
-#Calls the scrolling function repeatedly
 
-# DRAGGABLE TIMELINE 
-
-# $('.timelementos').pep({constrainToParent: true,axis: 'x'}); 
-
-# $(obj.el).css({ background: 'blue' })  
-
-# obj.forceStop(); 
-
-# $('.timelementos').css({"left":$(window).width()}); 
-
-# $('.capacidadeslink').click(); 
-
-# $(obj.el).css({ background: 'blue' })  
-
-# obj.forceStop(); 
-
-# $('.capacidadeslink').click(); 
-
-# $(obj.el).css({ background: 'blue' })  
-
-# obj.forceStop(); 
-
-# $('.timelementos').css({"left":$(window).width()}); 
-
-# $('.capacidadeslink').click(); 
-
-# QUE HAYA AUTOSCROLL AL HACER SCROLL DE LA VENTANA  
-
-# variable == 1; 
-
-#=================================
-#! ELEMENTOS ANIMADOS CON SCROLL
-#=================================
-
-# TIMELINE 
-# || $(this).scrollTop() > 1700 
-
-# SEPARADOR SERVICIOS 
-# && $(this).scrollTop() < 2300 
-
-# CASOS 
-
-# 	$if($(this).scrollTop() > 2792 && $(this).scrollTop() < 4065) { 
-
-# SI HAY MOVIMIENTO DE DIVS 
-
-#
-#	if ($(this).scrollTop() > 2995 && $(this).scrollTop() < 4065) {
-#		$('#eltitulo2').stop().animate({'left':'-225px'});
-#		$('#pintediv').stop().animate({'margin-left':'0'});
-#	} else {
-#		$('#eltitulo2').stop().animate({'left':'0'});
-#		$('#pintediv').stop().animate({'margin-left':'100%'});
-#	}
-#
-
-# SI NO LO HAY 
-
-#
-#$('#pintediv').stop().fadeTo('slow',0);
-#$('#pintediv').stop().animate({'margin-left':'0'});
-#
-#	if ($(this).scrollTop() > 2995 && $(this).scrollTop() < 4065) {
-#		$('#eltitulo2').stop().animate({'left':'-225px'});
-#		$('#pintediv').stop().fadeTo('slow',1);
-#	} else {
-#		$('#eltitulo2').stop().animate({'left':'0'});
-#		$('#pintediv').stop().fadeTo('slow',0);
-#	}
-#
-
-# EQUIPO 
-
-#
-#		$('.leyenda').stop().css({
-#			"position":"fixed",
-#			"top":"77px"
-#		})
-#
-
-#
-#		$('.leyenda').stop().css({
-#				"position":"absolute",
-#				"top":"inherit"
-#			})
-#
-
-# 	SCROLL SPY CASERO 
-
-#
-#	cuando window scrolltop => 2793 y <= 4065
-#
-#animación de #eltitulo2 
-#	aparece
-#	desaparece
-#	ponemos en contenedor a pinterest 'pintedivs'
-#	movemos a la izquierda a pintedivs
-#
-#else (es decir cuando es menor o mayor de 4065)
-#	#eltitulo2 desaparece
-#	pintedivs vuelve a la derecha
-#
-
-# $('.timelementos li').slideToggle("slow"); 
-
-#
-#$(document).ready(function(){
-#
-#	$('.timelementos li').each(function(ev){
-#		ofof = $(this).offset();
-#		ofleft = ofof.left;
-#	
-#		if( ofleft < 500) {
-#			$(this).fadeTo('slow',0.4);
-#		} else {
-#			$(this).fadeTo('slow',0.8);
-#		}
-#	})
-#})
-#
-
-# QUICKSAND 
-
-# TEXTOS QUICKSAND 
-
-# TEXTOS QUICKSAND 
-
-# get the action filter option item on page load
-
-# get and assign the ourHolder element to the
-# $holder varible for use later
-
-# clone all items within the pre-assigned $holder element
-
-# attempt to call Quicksand when a filter option
-# item is clicked
-
-# TEXTOS QUICKSAND 
-
-# reset the active class on all the buttons
-
-# assign the class of the clicked filter option
-# element to our $filterType variable
-
-#  $('li.span8').fadeTo(); 
-
-# assign all li items to the $filteredData var when
-# the 'All' filter option is clicked
-
-# find all li elements that have our required $filterType
-# values for the data-type element
-
-# call quicksand and assign transition parameters
-
-#   MINIATURAS EQUIPO 
-
-#
-#	$(this).click(function(){
-#		$('#miniequipo a').removeClass('active');
-#		$(this).addClass('active');
-#	})
-#
-
-# POPOVERS DE CASOS PARA BORRAR  
-
-#
-#
-#var tmp = $.fn.popover.Constructor.prototype.show;
-#$.fn.popover.Constructor.prototype.show = function () {
-#  tmp.call(this);
-#  if (this.options.callback) {
-#    this.options.callback();
-#  }
-#}
-#
-#
-#
-#var img = 'En las próximas semanas incluiremos este contenido. Gracias.';
-#
-#
-#	$('.c2').popover({ title: 'Sección en construcción', content: img, trigger:'click',callback: function() { 
-#    $(".c3,.c4,.c5,.c6,.c7,.c8").stop().popover('hide');
-#  }  });
-#
-#	$('.c3').popover({ title: 'Sección en construcción', content: img, trigger:'click',callback: function() { 
-#		$(".c2,.c4,.c5,.c6,.c7,.c8").stop().popover('hide');}
-#	});
-#	
-#	$('.c4').popover({ title: 'Sección en construcción', content: img, trigger:'click',callback: function() { 
-#		$(".c2,.c3,.c5,.c6,.c7,.c8").stop().popover('hide');}
-#	});
-#
-#	$('.c5').popover({ title: 'Sección en construcción', content: img, trigger:'click',callback: function() { 
-#		$(".c2,.c4,.c3,.c6,.c7,.c8").stop().popover('hide');}
-#	});
-#	
-#	$('.c6').popover({ title: 'Sección en construcción', content: img, trigger:'click',callback: function() { 
-#		$(".c2,.c4,.c5,.c3,.c7,.c8").stop().popover('hide');}
-#	});
-#	
-#	$('.c7').popover({ title: 'Sección en construcción', content: img, trigger:'click',callback: function() { 
-#		$(".c2,.c4,.c5,.c6,.c3,.c8").stop().popover('hide');}
-#	});
-#	
-#	$('.c8').popover({ title: 'Sección en construcción', content: img, trigger:'click',callback: function() { 
-#		$(".c2,.c4,.c5,.c6,.c7,.c3").stop().popover('hide');}
-#	});
-#	
-#	$(window).scroll(function () {
-#		$('.espan4').stop().popover('hide');
-#	})
-#
-
-# EFECTO 3d contacto 
-
-#
-#$(function() {
-#    
-#    var center = new google.maps.LatLng(44.230065,-76.50000);
-#    
-#    var svOptions = {
-#        position: center
-#    };
-#    
-#    var sv = new google.maps.StreetViewPanorama(document.getElementById('sv'),svOptions);
-#
-#    
-#    $('#toggle').click(function() {
-#        $('#sv').toggle();
-#        google.maps.event.trigger(sv, 'resize')
-#    });
-#    
-#});
-#
-
-#
-#
-#	$('.elboton').click().parent().parent().child().addClass('hhh');
-#
-
-# API DE YAHOO CLIMA 
-
-#parametros para buscar la ciudad
-
-#llamamos al script php mediante ajax
-
-# 	TABS 
-
-#     GRADO HERRAMIENTAS 
+# GRADO HERRAMIENTAS 
 crearherramientas = ->
   $(".gradobar").each ->
     $(this).animate
       width: $(this).data("grado") + "%"
       opacity: (($(this).data("grado")) / 100) * (($(this).data("grado")) / 100)
     , 5000
-
 
 # VERSIONES ADAPTATIVAS 
 checkWidth = ->
@@ -463,19 +105,6 @@ checkWidth = ->
             $(".nav.pull-right.segunda").stop().slideUp()  if $(".nav.pull-right.segunda").has(e.target).length is 0
 
 
-
-    #
-    #else {
-    #	        $('.nav.pull-right.segunda').slideDown();
-    #        }
-    #
-    
-    #
-    #$('.fotodcha').prev().css({
-    #			"top":"262px",
-    #			"position":"relative"
-    #		});
-    #
     $(".fotodcha").prev().addClass "cambioposi1"
     vuelvodeiphone = 1
   
@@ -483,21 +112,9 @@ checkWidth = ->
   else if windowsize < 979
     if vuelvodeiphone > 0
       
-      #
-      #$('.fotodcha').prev().css({
-      #				"top":"inherit"
-      #			});
-      #			
-      #
       $(".eltext").removeClass "cambioposi2"
       $(".nav.pull-right.segunda").show()
-    
-    #
-    #		$('.fotoizda').next().css({
-    #			"margin-left":"10px",
-    #			"margin-right":"0	"
-    #		});
-    #
+
     $(".eltext").removeClass "cambioposi1"
     $(".fotoizda").prev().addClass "cambioposi2"
     vuelvodeiphone = 1
@@ -506,12 +123,6 @@ checkWidth = ->
   else
     if vuelvodeiphone > 0
       
-      #
-      #$('.fotodcha').prev().css({
-      #				"top":"inherit"
-      #			});
-      #			
-      #
       $(".eltext").removeClass "cambioposi2"
       $(".nav.pull-right.segunda").show()
 cnt = $("#carousel_fade_intro .item,#carousel_fade_intro2 .item").length
@@ -528,7 +139,6 @@ $ ->
   $("#intro").css height: ($(window).height()) + "px"
   $(window).resize ->
     $("#intro").css height: ($(window).height()) + "px"
-
 
 $(document).ready ->
   $("html").niceScroll()
@@ -552,7 +162,6 @@ $.fn.clearForm = ->
       @checked = false
     else @selectedIndex = -1  if tag is "select"
 
-
 $ ->
   $("#more a, .nav a, .nav li a, .brand, #footer li a,#miniequipo a").bind "click", (event) ->
     $anchor = $(this)
@@ -563,7 +172,6 @@ $ ->
       scrollTop: $($anchor.attr("href")).offset().top - 61
     , 1500, "easeInOutExpo"
     event.preventDefault()
-
 
 $("[data-thumb=tooltip]").tooltip()
 $(".nav a").click ->
@@ -584,15 +192,19 @@ $(".nav a").click ->
   sv = new google.maps.StreetViewPanorama(document.getElementById("mapastreet"), svOptions)
 )()
 google.maps.event.addDomListener window, "load", initialize
+
+
+
 window.fadeaIn = (obj) ->
   $(obj).fadeTo "slow", 1
+  cargado()
 
 $(".anverso li").each ->
   $(this).click ->
     funcionajax this, true
 
-
 funcionajax = (elp, nav) ->
+  empieza()
   $("#vistaproyectos img").fadeTo "0", 0, ->
     if nav
       $(".normalli,.segunda,.colapsar").fadeTo "fast", 0, ->
@@ -615,16 +227,16 @@ funcionajax = (elp, nav) ->
               $(".procentra").append "<h1>" + entry.titulo + "</h1><div class=\"linea\"></div><h5>" + entry.subtitulo + "</h5><img onload=\"fadeaIn(this)\" src=\"" + entry.imagen + "\" alt=\"\">"
             else if entry.posicion is "cincuenta"
               console.log "2/ posicion cincuenta"
-              $(".procentra").append "<div class=\"columna50 izqu\"><h1>" + entry.titulo + "</h1><p>" + entry.texto + "</p></div><div class=\"columna50\"><img onload=\"fadeaIn(this)\" src=\"" + entry.imagen + "\" alt=\"\"></div>"
+              $(".procentra").append "<div class=\"columna50 izqu\"><h1>" + entry.titulo + "</h1><p>" + entry.texto + "</p></div><div class=\"columna50\"><img src=\"" + entry.imagen + "\" alt=\"\"></div>"
             else if entry.posicion is "sesentaycinco"
               console.log "3/ posicion 65"
-              $(".procentra").append "<div class=\"columna65 izqu\"><img onload=\"fadeaIn(this)\" src=\"" + entry.imagen + "\" alt=\"\"></div><div class=\"columna35\"><h5>" + entry.subtitulo + "</h5><p>" + entry.texto + "</p></div>"
+              $(".procentra").append "<div class=\"columna65 izqu\"><img src=\"" + entry.imagen + "\" alt=\"\"></div><div class=\"columna35\"><h5>" + entry.subtitulo + "</h5><p>" + entry.texto + "</p></div>"
             else if entry.posicion is "imagenes"
               console.log "3/ posicion imagen"
-              $(".procentra").append "<img onload=\"fadeaIn(this)\" src=\"" + entry.imagen + "\" alt=\"\">"
+              $(".procentra").append "<img src=\"" + entry.imagen + "\" alt=\"\">"
             else if entry.posicion is "imagenes50"
               console.log "3/ imagenes 50"
-              $(".procentra").append "<h1>" + entry.titulo + "</h1><div class=\"linea\"></div><h5>" + entry.subtitulo + "</h5><div class=\"columna50 izqu\"><img onload=\"fadeaIn(this)\" src=\"" + entry.imagen1 + "\" alt=\"\"></div><div class=\"imagenex columna50\"><img onload=\"fadeaIn(this)\" src=\"" + entry.imagen2 + "\" alt=\"\"></div>"
+              $(".procentra").append "<h1>" + entry.titulo + "</h1><div class=\"linea\"></div><h5>" + entry.subtitulo + "</h5><div class=\"columna50 izqu\"><img src=\"" + entry.imagen1 + "\" alt=\"\"></div><div class=\"imagenex columna50\"><img src=\"" + entry.imagen2 + "\" alt=\"\"></div>"
 
           $.each @presentacion, (entryIndex, entry) ->
             if entry.extendido is "si"
@@ -644,9 +256,6 @@ funcionajax = (elp, nav) ->
 
         else
           $("#vistaproyectos").removeClass entry["clase"]
-
-
-
 
 $filas = $(".dibujo").data("filas")
 $columnas = $(".dibujo").data("columnas")
@@ -688,7 +297,6 @@ $(".agujeeero").click ->
   $(".circulo").removeClass "grande"
   $(this).prev().addClass "grande"
   $("#intro .container").fadeTo "slow", 0, ->
-
 
 $(".agujeeero").hover (->
   $(this).parent().addClass "hoover"
@@ -739,7 +347,6 @@ jQuery ($) ->
       $posx = $pos.left
       $posx < -(1520 + ($(window).width()))
 
-
 $(window).scroll ->
   if $(this).scrollTop() < 1085
     $(".timelementos").stop().fadeTo "slow", 0
@@ -765,7 +372,6 @@ $(window).scroll ->
       $(this).css
         position: "absolute"
         "z-index": "-1"
-
 
   if $(window).scrollTop() + 50 > $("#fernando").offset().top - 25
     $("#miniequipo a").removeClass "active"
@@ -809,7 +415,6 @@ $(document).ready ->
 
     $("li.span8").fadeOut()  if $filterType is "all"
     false
-
 
 $("#miniequipo a").each ->
 
@@ -951,11 +556,6 @@ $(".anverso li").click ->
       $(".casosli").hide()
       $(".logoletras").removeClass "iphoneoculta"
 
-    
-    #
-    #		$('#supercontenedor').show();
-    #		$('#supercontenedor').css({'position':'absolute'},function(){
-    #
     $("#supercontenedor").css opacity: 0
     $("#supercontenedor").show ->
       $("#supercontenedor").fadeTo 1000, 1
@@ -968,17 +568,6 @@ $(".anverso li").click ->
         position: "fixed"
         top: "76px"
 
-
-
-
-
-#
-#$('#vistaproyectos').animate({
-#			'left':'100%'
-#		},function(){
-#			$('#vistaproyectos').css({'position':'fixed','top':'76px'});
-#		});
-#
 $(".casosli.siguiente").click ->
   if $("#vistaproyectos").hasClass("p01")
     funcionajax ".p06"
@@ -1012,6 +601,4 @@ $(window).load ->
       $("#preloader").delay(0).fadeOut "slow", ->
         lanzaragujeros()
         frases()
-
-
   )()

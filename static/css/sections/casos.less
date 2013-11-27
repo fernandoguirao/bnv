@@ -1,0 +1,430 @@
+.transition (@transition: all .5s ease-in-out) {
+-webkit-transition: @transition;
+-moz-transition: @transition;
+-o-transition: @transition;
+transition: @transition;
+}
+
+.pizquierda li img,#team,#team h1 {
+.transition(all .5s ease-in-out);
+}
+
+/* 
+<!------------------------>
+<!--! TÍTULO INICIAL  -->
+<!------------------------>
+ */
+
+#gallery {
+	background-color: #EFEFEF;
+	min-height: 981px;
+	padding-top: 5px;
+}
+
+.casos {
+		[class*="span"] {
+		float: left;
+		margin: 0%;
+		min-height: 1px;
+	}
+		
+	
+	h3 {
+		background-color: transparent;
+		border-bottom: 1px dashed #AEAEAE;
+		color: #AEAEAE;
+		display: inline-block;
+		font-family: 'Elena basic' !important;
+		font-size: 45px;
+		font-weight: lighter;
+		margin-bottom: 6px;
+		margin-top: -19px;
+		max-width: 424px;
+		padding-bottom: 13px;
+		text-transform: uppercase;
+	}
+	h5 {
+		color: #AEAEAE;
+		font-family: seravek;
+		font-size: 18px;
+		font-weight: lighter;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	.row.divide.span12 {
+		text-align: center;
+	}
+	#eltitulo2 > h2 {
+		background-repeat: no-repeat;background-image:url('../img/rombo.png');
+		background-position: 50% 0;
+		background-repeat: no-repeat;
+		color: white;
+		font-family: 'elena basic' !important;
+		font-weight: normal;
+		height: 270px;
+		line-height: 7.3;
+		top: -77px;
+		text-align: center;
+		position: relative;
+		background-size: 20%;
+	}
+	.row.divide.span12 > #eltitulo2 {
+		position: relative;
+		margin-top: -133px;
+	}
+
+}
+
+/*
+<!------------------>
+<!--! PROYECTOS  -->
+<!------------------>
+*/
+
+#contenedorproyectos {
+	padding-top:100px;
+}
+
+.pizquierda {
+  width: 66%;
+  max-height: 769px;
+}
+
+.pderecha {
+	width:33%;
+}
+
+.parte {
+	float:left;
+}
+
+/* PARTE IZQUIERDA */
+
+.pizquierda {
+	ul {
+		padding: 0!important;
+		margin: 0;
+		text-align: left;
+	}
+	li {
+  background-color: transparent;
+  border-radius: 0;
+  float: left;
+  height: 330px;
+  list-style-type: none;
+  margin-left: 0;
+  margin-right: 3%;
+  margin-bottom: 3%;
+  width: 213px;
+  background-size: 680%;
+  text-align:center;
+  background-position: -21px -12px;
+		background-image:url('../img/proyectos.png');
+	
+		
+		p {
+			display:none;
+		}
+		
+	}
+	
+	li.p03,li.p06 {
+  margin-right: 0;
+	}
+	.pbadge {
+		background-color: #bb4141;
+		width: 125px;
+		height: 125px;
+		display: inline-block;
+		margin-top: 105px;
+		text-align:center;
+		position:relative;
+		z-index:2;
+		.imag {
+			background-image:url('../img/proyectos.png');
+			display: inline-block;
+			height: 77px;
+			margin-top: 25px;
+			width: 83px;
+			background-position: -13px -771px;
+			background-size: 1977%;
+		}
+	}
+	
+	.pbadge.revers {
+		position: absolute;
+		margin-left: -125px;
+		z-index:1;
+	}
+	.p02 {
+		background-position: -288px -12px;
+		.pbadge .imag {
+			background-position: -284px -775px;
+	  }
+	}
+	.p03 {
+	  background-position: -552px -12px;
+		.pbadge .imag {
+			background-position: -535px -771px;
+	  }
+	}
+	.p04 {
+	  background-position: -822px -12px;
+		.pbadge .imag {
+			background-position: -826px -775px;
+	  }
+	}
+	.p05 {
+	  background-position: -1089px -12px;
+		.pbadge .imag {
+			background-position: -1097px -753px;
+	  }
+	}
+	.p06 {
+	  background-position: -1352px -12px;
+		.pbadge .imag {
+			background-position: -1348px -779px;
+	  }
+	}
+	.bn {
+		z-index:2;
+	}
+	.pbadge {
+		z-index:3;
+	}
+	.anverso li:hover {
+		.bn {
+			opacity:0.1;
+		}
+	}
+		
+		ul.anverso {
+			position:relative;
+			z-index:1;
+		}
+
+	ul.reverso {
+		position: relative;
+		top: -758px;
+		z-index:0;
+		.pbadge {
+			p {
+
+  color: white;
+  display: block;
+  font-size: 12px;
+  line-height: 1.3;
+  margin-left: 13px;
+  position: absolute;
+  text-transform: none;
+  top: 25px;
+  width: 98px;
+
+
+				span {
+					color: white;
+					display: block;
+					margin-bottom: 3px;
+					text-transform: uppercase;
+				}
+			}
+			.imag{
+				background-image:none;
+			}
+		}
+		.p01 {
+			background-position:-21px -389px;
+		}
+		.p02 {
+			background-position: -288px -389px;
+		}
+		.p03 {
+			background-position: -552px -389px;
+		}
+		.p04 {
+			background-position: -822px -389px;
+		}
+		.p05 {
+			background-position: -1089px -389px;
+		}
+		.p06 {
+			background-position: -1352px -389px;
+		}
+		
+	}
+
+}
+
+.pderecha {
+  padding: 0 3%;
+  width: 28%;
+}
+
+.pabajo {
+	.pabheader > h2 {
+		font-size: 13px;
+		color: #727272;
+		text-transform: uppercase;
+		font-weight: normal;
+		text-align: left;
+		margin-bottom:4%;
+	.icochem {
+background-image: url("../img/proyectos.png");
+background-position: 0 0;
+display: inline-block;
+height: 18px;
+width: 20px;
+background-position: -1614px -779px;
+top: 4px;
+position: relative;
+margin-right: 6px;
+}
+	}
+	.pabbody > ul {
+  margin: 0;
+  padding: 0;
+}
+	.pabbody li {
+  color: #929292;
+font-size: 12px;
+list-style-type: none;
+text-align: left;
+text-transform: uppercase;
+height: 35px;
+  p {
+  display: inline-block;
+  width: 30%;
+}
+  .fondbar {
+  background-color: #cacaca;
+display: inline-block;
+height: 21px;
+width: 66%;
+border-radius: 4px;
+top: 6px;
+position: relative;
+overflow:hidden;
+}
+.gradobar {
+  width: 0;
+  height: 100%;
+  background-color:#bb4141;
+  opacity:0;
+/*
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+*/
+}
+}
+	
+}
+
+/* ACORDEÓN */
+
+.parriba li {
+  list-style-type: none;
+  margin: 0;
+}
+
+.parriba ul {
+border-bottom: 0 none;
+margin: 9px 0 30px;
+
+}
+
+.parriba .active > a {
+
+}
+
+.parriba .nav-tabs > li > a {
+	border-radius:0;
+	text-transform:uppercase;
+	font-size:12.8px;
+	color:#777777;
+	border:none;
+
+}
+
+.parriba .nav-tabs > li > a:hover {
+border:none;
+color:#bb4141;
+}
+
+
+
+
+.parriba .nav-tabs > li.active > a {
+	border-radius:4px;
+	  background-color: #bb4141;
+	  color:white;
+	  border:0;
+	  
+}
+
+a.miniim {
+  width: 20%;
+  height: 55px;
+  display: inline-block;
+  margin-right: 3%;
+  margin-left: 0;
+  padding: 1px;
+  margin-bottom: 5%;
+  img {
+	  border-radius:3px;
+	  border:3px solid white;
+    height: 67px;
+    width: 67px;
+  }
+}
+
+.parriba .tab-pane {
+	text-align:left;
+}
+
+.pizquierda li {
+	position:relative;
+}
+
+.anverso li > img {
+  left: 0;
+  position: absolute;
+  width:100%;
+}
+
+.anverso li {
+  border-radius: 6px;
+  overflow: hidden;
+  border: 8px solid white;
+  cursor:pointer;
+}
+
+/* MENú */
+
+.casosli {
+	display:none;
+	opacity:0;
+	background-image:url('../img/botonescasos.png');
+	min-height: 75px;
+min-width: 82px;
+background-repeat: no-repeat;
+}
+
+.casosli:hover {
+	border-bottom:0px!important;
+}
+
+.casosli.cerrar {
+  background-position: 28px 25px;
+}
+
+.casosli.siguiente {
+	background-position:-51px 28px;
+}
+
+.casosli.anterior {
+	background-position: -127px 28px;
+}
+
+.parriba .tab-pane {
+min-height: 88px;
+}
