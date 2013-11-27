@@ -1,0 +1,390 @@
+.opacity (@trans: 0.5) {
+	@trans1:@trans * 10;
+	-moz-opacity:@trans;
+	opacity:@trans;
+	-khtml-opacity: @trans;
+	filter:alpha(opacity=@trans1);
+}
+
+h1,h2,h3,h4,h5,p {
+	font-family: seravek!important;
+}
+
+h3.lateral {
+  color: #CB1F19 !important;
+  font-weight: lighter;
+  width: 180px;
+  font-size:23px;
+}
+
+#services {
+	background-color:#efefef;
+}
+
+#hint1b {
+/*   background: #80181D; */
+	background-color:#202020;
+	box-shadow:0 3px 2px -1px black;
+  padding: 2px;
+  position: relative;
+  text-align: center;
+  z-index: 4;
+  a {
+  	color:white;
+  }
+}
+
+#services-top-desktop {
+	background-color:#131313;
+}
+
+.icono {
+  background-image: url("../img/iconos.png");
+  height: 60px;
+  width: 91px;
+  background-size: 665% auto;
+}
+
+.icono.bici {
+  background-position: 96% 84%;
+}
+
+.icono.nike {
+  background-position: 30% 98%;
+}
+
+.icono.mac {
+  background-position: -67% 3%;
+  background-size: 487% auto;
+}
+
+.thumbnail .icono.bici,.thumbnail .icono.nike,.thumbnail .icono.mac {
+  display: inline-block;
+  margin-left: 0;
+}
+
+.thumbnail h4 {
+	color: #AEAEAE;
+	font-size: 22px;
+	font-weight: lighter;
+}
+
+.thumbnail p {
+  margin: 0;
+  padding: 0 20px;
+  color: #aeaeae;
+}
+
+p strong {
+  border-bottom: 1px dotted #AEAEAE;
+  color: #AEAEAE;
+  font-weight: inherit;
+  margin-right:3px;
+}
+
+#services h3 {
+  background-color: #EFEFEF;
+  color: #AEAEAE;
+  font-size: 24.5px;
+  font-weight: lighter;
+  text-align: center;
+  margin-top:38px!important;
+
+}
+
+.lineapuntos {
+  border-bottom: 1px dotted #AEAEAE;
+  float: left;
+  height: 1px;
+  width: 36%;
+}
+
+#services h3 {
+  background-color: #EFEFEF;
+  border-bottom: 1px dashed #AEAEAE;
+  color: #AEAEAE;
+  display: inline-block;
+  font-family: 'Elena basic' !important;
+  font-size: 54px;
+  font-weight: lighter;
+  margin-bottom: 6px;
+  margin-top: 10px;
+  max-width: 424px;
+  padding-bottom: 15px;
+}
+
+.subtitular {
+  margin-bottom: 10px;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.climagen {
+	.opacity;
+	margin-bottom:40px;
+  clear: both;
+  display: inline-block;
+  max-width: 904px;
+}
+
+#services .divide {
+  margin-bottom: 8px;
+}
+
+.centrador {
+  text-align: center;
+}
+
+
+
+
+#services h5 {
+	text-align:center;
+	font-size:19px;
+	font-weight:lighter;
+	font-family:seravek;
+	text-transform:uppercase;
+	color:#AEAEAE;
+}
+
+.subtitular p {
+  color: #AEAEAE;
+  margin-bottom: 0;
+  margin-top: 39px;
+  font-size: 16px;
+  font-weight: lighter;
+  line-height:1.3;
+}
+
+/*
+#clientescroll > h1 {
+  font-size: 40px;
+  margin-top: 40px;
+  position: absolute;
+  text-align: center;
+  display: inline-block;
+  margin-left: 400px;
+  margin-top: 162px;
+  color: white;
+  font-weight: lighter;
+}
+
+#carousel_fade_intro2 {
+	position: absolute;
+}
+*/
+
+/*
+<!----------------->
+<!--! TIMELINE  -->
+<!----------------->
+*/
+
+ul.timelementos {
+  clear: both;
+  width: 3641px;
+  background: #EFEFEF;
+  display: inline-block;
+  height: 170px;
+  padding-top: 128px;
+  cursor:col-resize;
+  margin-top:-128px;
+}
+
+ul.timelementos li {
+	list-style-type:none;
+	float:left;
+}
+
+.timeline .linea {
+  background-color: #A3A3A3;
+  height: 4px;
+  margin-top: 9px;
+  position: absolute;
+  width: 100%;
+  margin-left: 1297px;
+}
+
+.timeline {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height:340px;
+  margin-top:0px;
+  overflow:hidden;
+}
+
+#services {
+	padding-bottom:380px;
+}
+
+.timelementos li {
+  margin-right: 39px;
+}
+
+.marca {
+	text-align:center;
+	.logomarca > .sprite {
+		margin-top: -19px;
+	}
+	.circulou {
+		background-color:rgba(163,163,163,0.21);
+		width:41px;
+		height:41px;
+		margin-top:1px;
+		.minicirculo {
+			background-color: #A3A3A3;
+			height: 18px;
+			margin-left: -9px;
+			margin-top: 11px;
+			position: absolute;
+			width: 18px;
+			z-index:1;
+		}
+		display:inline-block;
+	}
+	.globo {
+		.pico {
+			background-image: url("../img/sprite.png");
+			background-position: -1596px -1743px;
+			background-repeat:no-repeat;
+			height: 10px;
+			position: relative;
+			width: 15px;
+			display: inline-block;
+			top: -15px;
+		}
+		margin-top:20px;
+		width:auto;
+		height:102px;
+		border-radius:17px;
+		background-color:#a3a3a3;
+		text-align:center;
+		padding:0 27px;
+	}
+}
+
+.marca:hover {
+	.minicirculo {
+		background-color:#BE4747;
+	}
+}
+	.marca.arriba {
+		.globo{
+			top: -192px;
+			position: relative;
+			.pico {
+				background-image:url("../img/sprite.png");
+				background-position: -1596px -1730px;
+				background-repeat:no-repeat;
+				top:96px;
+			}
+		}
+	}
+
+.timelementos {
+  top: 156px;
+  position: relative;
+}
+
+.anyo {
+	p {
+		color:#CECECE;
+		font-size:30px;
+		font-weight:bold;
+		font-family:seravek;
+		margin-top:-17px;
+	}
+}
+
+.anyo.abajo p {
+	margin-top:39px;
+}
+
+.mas {
+	text-align:center;
+	cursor:pointer;
+
+	.circulou {
+		background-color: #A3A3A3;
+		display: inline-block;
+		height: 12px;
+		margin-top: 15px;
+		width: 12px;
+		z-index:1;
+		position: relative;
+	}
+	.globo {
+		height: 45px;
+		margin-top: -82px;
+		padding-top: 7px;
+		text-align: center;
+		width: 40px;
+		background-image:url('../img/sprite.png');
+		background-position: -1398px -484px;
+		background-repeat:none;
+	}
+}
+
+.mas:hover {
+	.circulou {
+		background-color:#BE4747;
+	}
+}
+
+.contenetime {
+  height: 4px;
+  left: -3641px;
+  position: relative!important;
+  width: 7282px;
+  margin-top: 157px;
+}
+
+.timeline {
+	overflow:hidden;
+}
+
+ul.timelementos {
+background-image: url("../img/linea.png");
+background-position: -473px -1930px;
+background-repeat: no-repeat;
+left: 3641px;
+margin-top: -1184px;
+padding-top: 118px;
+background-repeat: repeat-x;
+background-position: 0 136px;
+	
+}
+
+#team.easter {
+	background-color:black;
+	.leyenda {
+  background-color: black;
+}
+	h1 {
+		background-color:black;
+	}
+	#menuequipo {
+		display:none;
+	}
+}
+
+p.center {
+  text-align: center;
+  margin-left: -39px;
+}
+
+.span8.texto {
+  margin-top: 17px;
+  width: inherit!important;
+}
+
+ul.ourHolder {
+	overflow: inherit!important;
+}
+
+/*
+ul.ourHolder li.item:hover {
+	
+}
+*/
