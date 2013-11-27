@@ -721,6 +721,14 @@ input[type="text"], select, textarea {
     bottom: 0;
     background-color: #fff;
     z-index: 9999;
+    &.alternate {
+      background-color:rgba(0,0,0,.5);
+      #status {
+        background-image: url(../img/ajax-loader.gif)!important;
+        width:66px;
+        top:254px;
+      }
+    }
 }
 
 #status {

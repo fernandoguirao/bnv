@@ -7320,6 +7320,14 @@ textarea {
   background-color: #fff;
   z-index: 9999;
 }
+#preloader.alternate {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#preloader.alternate #status {
+  background-image: url(../img/ajax-loader.gif) !important;
+  width: 66px;
+  top: 254px;
+}
 #status {
   width: 200px;
   height: 200px;
@@ -12235,7 +12243,7 @@ a.miniim img {
   display: inline-block;
   font-size: 19px;
   font-weight: lighter;
-  margin: 10px 0 0;
+  margin: 10px 0 15px;
   text-align: center;
   line-height: 1.3;
 }
